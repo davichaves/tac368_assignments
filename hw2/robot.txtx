@@ -1,0 +1,16 @@
+Robot
+
+You have a warehouse that is a rectangular grid.   You can show 
+this with a 2D grid of boxes with touching edges.   You have a robot
+that occupies a single square of the grid.   Indicate this by putting
+"R" in that box.  There are 4 buttons, north, south, east, west.
+When you hit one of the buttons, the robot moves
+one square in that direction (but not off the grid).  
+
+Let's make the grid 5x5 for now, but try to use variables, so we
+can adjust later.
+
+Submit your .dart file to blackboard.  Put you name in it, and
+use comments and all that.
+
+

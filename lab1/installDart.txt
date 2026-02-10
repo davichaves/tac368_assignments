@@ -1,0 +1,13 @@
+
+Install the IDE
+
+Get far enough in the Flutter / VSCode installation so
+you can run Dart programs.
+
+This lab is not about points or due dates;
+I am using it to see who has the tools running and
+who still needs help.
+
+Note: submit any Dart program for this, but do not do it
+until you can actually run that program.
+

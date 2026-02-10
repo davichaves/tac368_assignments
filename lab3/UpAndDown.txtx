@@ -1,0 +1,19 @@
+Up and Down
+
+You have the default/hello Flutter program, a counter that
+counts up.
+
+Add a button to count down.
+Add a button to reset the counter to 0.
+
+You may not be able to add these to the 
+"floatingActionButton:" space in Scaffold
+(because that only holds one).  
+
+You can add them to the Column, which allows all
+kinds of Widgets (like FloatingActionButton).
+better: add a Row to the Column and make all
+3 buttons children of this row.  
+
+
+

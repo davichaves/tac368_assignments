@@ -1,0 +1,7 @@
+Counter done with BlocProvider
+
+Take the default flutter app, the counter, and 
+convert the state part of it to use BlocProvider.
+
+submit on BrightSpace and GitHub
+

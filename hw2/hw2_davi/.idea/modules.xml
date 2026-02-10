@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hw2_davi.iml" filepath="$PROJECT_DIR$/hw2_davi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/hw2_davi_android.iml" filepath="$PROJECT_DIR$/android/hw2_davi_android.iml" />
+    </modules>
+  </component>
+</project>

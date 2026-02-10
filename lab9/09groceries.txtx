@@ -1,0 +1,18 @@
+
+Groceries
+
+lab for TAC-368
+
+Make a Flutter app that holds a grocery list.  
+
+You should be able to
+-- load the existing list
+-- add to it
+-- delete items
+-- save it (so you can load it later)
+
+If you stop and re-run the program, it should have the saved list.
+
+Submit via BrightSpace or your GitHub.
+
+

@@ -1,0 +1,30 @@
+Homework for TAC-368   3x+1
+
+Write a program to explore the following function of one integer.
+
+f(x) = 3x+1 if x is odd
+       x/2 if x is even
+
+The idea is to repeat x = f(x) and get a sequence of values.
+The sequence will end in 1 (not proven, but it will).  
+
+Let's make a class that holds the sequence, the max of the
+sequence, and the length of the sequence.  
+
+You will need a function that returns a sequence as a list.  We will also
+need functions that get the max and the length.  You may be
+able to find these (as functions of a list).  
+
+Now we can explore what happens with various starting numbers,
+between 1 an 100, say.  
+
+Try printing the maximum value of the sequence for each number
+between 1 and 100.
+
+Now try printing the length of the sequence (for each starting
+number between 1 an 100).  
+
+The tricky part here is to try to initialize the class in the constructor.
+We would like the member variables to be 'final'.  
+
+Submit as ThreexYourName.dart .  Mine would be ThreexKoster.dart .
