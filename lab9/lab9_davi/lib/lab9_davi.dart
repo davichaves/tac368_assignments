@@ -85,7 +85,7 @@ class _GroceryViewState extends State<GroceryView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Grocery List")),
+      appBar: AppBar(title: const Text("Grocery List - Davi")),
       body: BlocBuilder<GroceryCubit, GroceryState>(
         builder: (context, state) {
           return Column(
