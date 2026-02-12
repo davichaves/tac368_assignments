@@ -1,0 +1,44 @@
+Lab10 Madlib	 
+
+A Madlib is a pre-written story with blanks for missing words. Users
+fill in the words without any context of how they fit into the story. 
+Then you read the story. 
+This can be funny (for 7 year olds) when they see what nonsense they’ve made.
+
+Version 1
+
+Make up or find a story, just a 2 or 3 sentences will do.
+
+Identify 3 or 4 key words, to be replaced by user input.
+
+Write a program that has blanks for users to enter replacements
+for the key words.  Typically you have to tell the user what
+part of speech the word is, so that the story at least reads ok.
+
+When the user has typed the replacements, they should be able to
+hit a button that shows the story (with the new words).  
+
+example:
+
+Choose an animal: elephant
+Choose a place: Africa
+Enter a number: 7
+Name a thing: pencils
+<go>
+When I was in Africa, I bought a pet elephant.
+I traded 7 pencils to get the elephant.
+
+=============
+version 2 
+
+Do this based on a story in a file.  To represent blanks,
+put a dollar sign and then type of word to be replaced.
+If you want to re-use what was in a previous blank, mark
+that by a percent sign and then a number (index of the blank,
+starting at 0 of course).
+
+eg.
+When I was in $ place, I bought a pet $ animal.
+I traded $ number $ thing to get the % 1
+
+
