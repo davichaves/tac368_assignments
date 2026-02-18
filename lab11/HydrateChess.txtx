@@ -1,0 +1,24 @@
+lab
+Hydrate Chess
+
+You are given a chess board.  It is not a finished interface,
+but you can see where all of the pieces are, and you can move
+them (click on piece to move, then click where you want to move
+it).  
+
+The goal of this lab is to hydrate the game state, by which
+we mean ... make it so that if you stop the game program and
+then re-start it, the game resumes where you left off.  It
+does not reset to a new game.  
+
+You can tuck into a repo you are sharing with me (and leave me
+a note on BrightSpace).  OR, just zip the folder and put that
+on BrightSpace. 
+
+
+
+
+
+
+
+
