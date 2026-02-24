@@ -1,0 +1,23 @@
+
+Splash123
+
+This is your first lab with navigation (between pages of an app).
+
+You are given an app that has 2 pages, with navigation between 
+then.
+
+You should add a 3rd page, and be able to get to it from
+both existing pages.  
+
+Can you get from page 3 to page 2, back and forth, without
+piling up duplicates on the stack?
+
+I am actually giving you 3 different versions of the app.
+Use whichever works for you, or try them all.  
+
+There is 2 (at least) ways to connection the 3rd page.
+a. chain on the end of page 2
+b. another option from page 1
+
+In case a. going from 3 to 1 takes 2 pops.
+In case b. going from page 3 to page 2 takes pop and then push.  
