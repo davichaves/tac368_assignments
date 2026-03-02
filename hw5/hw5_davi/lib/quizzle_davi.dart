@@ -14,7 +14,7 @@ class QuizzleApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Quizzle',
+      title: 'Quizzle - Davi Chaves',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
         useMaterial3: true,
@@ -103,7 +103,7 @@ class _SelectionScreenState extends State<SelectionScreen> {
     // Basic UI for file and mode selection
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Quizzle - Select Quiz'),
+        title: const Text('Quizzle Davi Chaves - Select Quiz'),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       body: Center(
