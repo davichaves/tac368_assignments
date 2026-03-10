@@ -1,0 +1,13 @@
+Weather.txtx
+lab for TAC368
+
+Write an app that fetches the temperature from weatherapi.com
+and displays it.  You will have to make an account, at which
+point they will give you a key that you must send them when
+you want to use their interface.  
+
+If I give you starter code, then add to it.  My solution 
+takes the zip code and then give temperature and wind
+speed.  You should be able to look in the help files
+to see how to find this information.  
+
