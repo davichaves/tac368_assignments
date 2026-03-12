@@ -1,0 +1,30 @@
+API.txtx
+lab for TAC-368
+
+Find an API that interests you and write an app that 
+interacts with it.  At a minimum, you should be able
+to send it some piece of key information and have it
+send you some information back.  Display
+the interaction of course.
+
+Example: weather, send it zip code, it send temperature
+and wind speed_direction.  
+
+But do not do the weather one.  I am giving you that one.
+Do something besides the weather.
+
+Example: send a stock code and it sends you the current
+share price.  
+
+Some APIs provide a list of things as a start, and you
+pick one to dig deeper.  
+
+And I know that some of you have done this API fetch thing
+in other languages, so the point is not about the API,
+but how to handle the calls and returns in Flutter.
+
+The site https://dev.to/onlyoneerin/
+38-awesome-apis-to-inspire-your-next-software-project-4395
+has lots of possibilities.  Or find one on your own.
+
+We may demo these for the class (20261 after break).  
