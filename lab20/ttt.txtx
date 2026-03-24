@@ -1,0 +1,18 @@
+Tic Tac Toe 
+lab
+
+You are given starter code that runs Tic Tac Toe
+between two programs.  But it is missing things
+you can add:
+
+-- enforce turn taking.
+-- add win detection and then end the game
+-- add a 'resign' button.
+-- add a layer so you can chat with your opponent.
+   Or use the current one, but somehow you should
+   have visible messages and INvisible messages.  
+   You will need the latter for the programs to 
+   communicate in Scrabble without telling the user.
+-- add pass option?  Not needed for TTT but you will
+   need it for Scrabble.  
+

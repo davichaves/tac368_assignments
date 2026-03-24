@@ -1,0 +1,6 @@
+Chatter
+
+You are given a server and client pair that communicate.
+But they each only show the last thing said.  Convert these
+to apps that show the ongoing conversation (each app shows
+what both have said).
