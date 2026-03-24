@@ -58,8 +58,8 @@ class SaidCubit extends Cubit<SaidState>
 {
   SaidCubit() : super( SaidState("and so it begins ....\n" ) );
 
-  // void update( String more ) { emit(SaidState( "${state.said}$more\n" ) ); } 
-  void update( String s ) { emit( SaidState(s) ); }
+  void update( String more ) { emit(SaidState( "${state.said}$more\n" ) ); } 
+  // void update( String s ) { emit( SaidState(s) ); }
 }
 
 void main()
@@ -112,7 +112,8 @@ class Client2 extends StatelessWidget
           cs.theServer!=null
           ?  ElevatedButton
             ( onPressed: ()
-              { cs.theServer!.write ( tec.text ); 
+              { cs.theServer!.write ( tec.text );
+                sc.update("Client: " + tec.text);
               },
               child: Text("send to server"),
             )
@@ -133,7 +134,7 @@ class Client2 extends StatelessWidget
     cs.theServer!.listen
     ( (Uint8List data) async
       { final message = String.fromCharCodes(data);
-        sc.update(message);
+        sc.update("Server: " + message);
       },
           // handle errors
       onError: (error)
