@@ -29,7 +29,7 @@ class Player extends StatelessWidget
         ( create: (context) => SaidCubit(),
           child: BlocBuilder<SaidCubit,SaidState>
           ( builder: (context,state) => Scaffold
-            ( appBar: AppBar(title: Text("player")),
+            ( appBar: AppBar(title: Text("player - davi")),
               body: Player2(),
             ),
           ),

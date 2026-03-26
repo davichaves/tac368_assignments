@@ -43,7 +43,7 @@ class ServerOrClient extends StatelessWidget
     ( title: "game",
       home: Builder
       ( builder: (context) => Scaffold
-        ( appBar: AppBar( title: Text("which role?") ),
+        ( appBar: AppBar( title: Text("which role? - davi") ),
           body: Row
           ( children:
             [ ElevatedButton
