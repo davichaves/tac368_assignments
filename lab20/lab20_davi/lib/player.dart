@@ -64,13 +64,60 @@ class Player3 extends StatelessWidget
   Widget build( BuildContext context )
   { SaidCubit sc = BlocProvider.of<SaidCubit>(context);
     SaidState ss = sc.state;
-    return Column
-    ( children:
-      [ Row(children: [ Sq(0), Sq(1), Sq(2)]),
-        Row(children: [ Sq(3), Sq(4), Sq(5)]),
-        Row(children: [ Sq(6), Sq(7), Sq(8)]),
-        Text("said: ${ss.said}"),
-      ]
+    GameCubit gc = BlocProvider.of<GameCubit>(context);
+    GameState gs = gc.state;
+    YakCubit yc = BlocProvider.of<YakCubit>(context);
+    
+    TextEditingController tec = TextEditingController();
+
+    return SingleChildScrollView(
+      child: Column
+      ( children:
+        [ Row(children: [ Sq(0), Sq(1), Sq(2)]),
+          Row(children: [ Sq(3), Sq(4), Sq(5)]),
+          Row(children: [ Sq(6), Sq(7), Sq(8)]),
+          if (gs.winner != "") Text("Winner: ${gs.winner}", style: TextStyle(fontSize: 24)),
+          if (gs.resignedBy == "opponent") Text("Opponent Resigned", style: TextStyle(fontSize: 24, color: Colors.red)),
+          if (gs.resignedBy == "me") Text("You Resigned", style: TextStyle(fontSize: 24, color: Colors.blue)),
+          ElevatedButton(
+            onPressed: () {
+              gc.resignLocally();
+              yc.say("resign");
+            },
+            child: Text("Resign")
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              children: [
+                Expanded(child: TextField(
+                  controller: tec,
+                  decoration: InputDecoration(hintText: "Enter chat message"),
+                  onSubmitted: (val) {
+                    if (val.isNotEmpty) {
+                      sc.update("Me: $val");
+                      yc.say("chat Opponent: $val");
+                      tec.clear();
+                    }
+                  }
+                )),
+                IconButton(
+                  icon: Icon(Icons.send),
+                  onPressed: () {
+                    String val = tec.text;
+                    if (val.isNotEmpty) {
+                      sc.update("Me: $val");
+                      yc.say("chat Opponent: $val");
+                      tec.clear();
+                    }
+                  }
+                )
+              ]
+            )
+          ),
+          ...ss.messages.map((m) => Text(m)).toList(),
+        ]
+      )
     );
 
   }
@@ -92,9 +139,11 @@ class Sq extends StatelessWidget
     
     return ElevatedButton
     ( onPressed: ()
-      { gc.play(sn);
-
-        yc.say("sq $sn");
+      { 
+        if (gs.board[sn] == GameCubit.d && gs.myTurn && gs.winner == "" && gs.resignedBy == "") {
+          gc.play(sn);
+          yc.say("sq $sn");
+        }
       },
       child: Text(gs.board[sn]),
     );

@@ -17,17 +17,20 @@ import "game_state.dart";
 
 class SaidState
 {
-   String said;
+   List<String> messages;
 
-   SaidState( this.said );
+   SaidState( this.messages );
 }
 
 class SaidCubit extends Cubit<SaidState>
 {
-  SaidCubit() : super( SaidState("and so it begins ....\n" ) );
+  SaidCubit() : super( SaidState(["and so it begins ...."] ) );
 
   // void update( String more ) { emit(SaidState( "${state.said}$more\n" ) ); } 
-  void update( String s ) { emit( SaidState(s) ); }
+  void update( String s ) { 
+    List<String> newMessages = List.from(state.messages)..add(s);
+    emit( SaidState(newMessages) ); 
+  }
 
   void listen( BuildContext bc )
   { YakCubit yc = BlocProvider.of<YakCubit>(bc);
@@ -39,8 +42,11 @@ class SaidCubit extends Cubit<SaidState>
     ys.socket!.listen
     ( (Uint8List data) async
       { final message = String.fromCharCodes(data);
-        update(message);
-        gc.handle(message);
+        if (message.startsWith("chat ")) {
+          update(message.substring(5));
+        } else {
+          gc.handle(message);
+        }
       },
           // handle errors
       onError: (error)
