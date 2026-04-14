@@ -9,7 +9,7 @@ class AppLocalizationsPt extends AppLocalizations {
   AppLocalizationsPt([String locale = 'pt']) : super(locale);
 
   @override
-  String get appTitle => 'Demonstração de Localização';
+  String get appTitle => 'Demonstração de Localização - Davi';
 
   @override
   String get helloWorld => 'Olá Mundo!';

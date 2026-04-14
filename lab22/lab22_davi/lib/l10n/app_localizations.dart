@@ -100,7 +100,7 @@ abstract class AppLocalizations {
   /// No description provided for @appTitle.
   ///
   /// In en, this message translates to:
-  /// **'Localization Demo'**
+  /// **'Localization Demo - Davi'**
   String get appTitle;
 
   /// No description provided for @helloWorld.
