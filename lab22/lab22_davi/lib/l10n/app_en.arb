@@ -1,0 +1,14 @@
+{
+  "appTitle": "Localization Demo",
+  "helloWorld": "Hello World!",
+  "counterMessage": "You have clicked {count} times",
+  "counterButton": "Increment",
+  "@counterMessage": {
+    "description": "Shown under the counter button",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "appTitle": "Demonstração de Localização",
+  "helloWorld": "Olá Mundo!",
+  "counterMessage": "Você clicou {count} vezes",
+  "counterButton": "Incrementar",
+  "@counterMessage": {
+    "description": "Mostrado sob o botão do contador",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
